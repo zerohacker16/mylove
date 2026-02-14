@@ -43,7 +43,7 @@ const VisualEffects = forwardRef<VisualEffectsHandle>((_, ref) => {
     const colorHue = Math.random() * 360;
     
     for (let i = 0; i < 80; i++) {
-      const angle = (Math.PI * 2 * i) / 80;
+      const angle = (Math.PI * 2 * i) / 40;
       const velocity = 3 + Math.random() * 4;
       particles.push({
         x: x,
@@ -101,7 +101,7 @@ const VisualEffects = forwardRef<VisualEffectsHandle>((_, ref) => {
     const initStars = (w: number, h: number) => {
         starsRef.current = [];
         // Much denser stars (divided by 400 instead of 3000)
-        const count = Math.floor((w * h) / 700); 
+        const count = Math.floor((w * h) / 1000); 
         for(let i=0; i<count; i++) {
             starsRef.current.push({
                 x: Math.random() * w,
