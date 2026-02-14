@@ -8,7 +8,7 @@ const MusicPlayer: React.FC = () => {
   const [isMuted, setIsMuted] = useState(false);
 
   // Using a royalty-free romantic track
-  const trackUrl = "https://cdn.pixabay.com/download/audio/2022/10/25/audio_515715904b.mp3?filename=romantic-piano-124978.mp3"; 
+  const trackUrl = "/love.mp3"; 
 
   useEffect(() => {
     if (audioRef.current) {
@@ -43,8 +43,8 @@ const MusicPlayer: React.FC = () => {
             <Music className="w-5 h-5 text-valentine-200" />
         </div>
         <div className="hidden md:block text-xs text-white/80 font-sans mr-2">
-          <p>Romantic Piano</p>
-          <p className="text-[10px] opacity-70">For you</p>
+          <p>моя Шаритулька♥️</p>
+          <p className="text-[10px] opacity-70">для тебя♥️</p>
         </div>
       </div>
 
